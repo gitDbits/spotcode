@@ -3,7 +3,7 @@ import 'react-bulma-components/dist/react-bulma-components.min.css';
 import 'app.scss';
 import Routes from './routes';
 import { BrowserRouter } from 'react-router-dom';
-import Menu from './common/menu';
+import Menu from './components/common/menu';
  
  
 const App = () => {
