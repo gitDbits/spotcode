@@ -3,6 +3,11 @@ import SectionWrapper from '../../components/common/section_wrapper';
 import { Button, Columns, Heading } from 'react-bulma-components';
 import styled from 'styled-components';
 
+const ButtonSubscribe = styled(Button)`
+  border-width: 2px;
+  margin-top: 50px
+`
+
 const MainHeading = styled(Heading)`
   margin-top: 50px;
 `
@@ -12,12 +17,6 @@ const DescriptionList = styled.ul`
   font-size: 20px;
   list-style-type: square;
 `
-
-const ButtonSubscribe = styled(Button)`
-  border-width: 2px;
-  margin-top: 50px
-`
-
 const HomeScreen = () => {
   return (
     <SectionWrapper>
