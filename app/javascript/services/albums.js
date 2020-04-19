@@ -1,6 +1,6 @@
 import Api from './api';
 
-const AlbumService = {
+const AlbumsService = {
   index: () => Api.get('/dashboard')
 }
 
