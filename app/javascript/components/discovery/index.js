@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import Album from '../album';
+import Album from '../common/album';
 import styled from 'styled-components';
 import { Columns, Heading } from 'react-bulma-components';
 import AlbumsService from '../../services/albums';
@@ -20,8 +20,6 @@ const Discovery = () => {
 
   useEffect(() => {
     fetchAlbums();
-    console.log(recommended_albums);
-    console.log(recent_albums);
   }, []);
 
   const recent_albums_components = recent_albums.map((album, key) =>
