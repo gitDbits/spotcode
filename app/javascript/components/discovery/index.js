@@ -3,6 +3,7 @@ import Album from '../common/album';
 import styled from 'styled-components';
 import { Columns, Heading } from 'react-bulma-components';
 import AlbumsService from '../../services/albums';
+import { useParams } from 'react-router-dom';
 
 const DivVSpaced = styled.div`
   margin-top: 50px;
@@ -46,7 +47,6 @@ const Discovery = () => {
           </Columns>
         </div>
       }
-
       {recommended_albums_components.length > 0 &&
         <DivVSpaced>
           <Heading className='has-text-white' size={4}>

@@ -3,7 +3,7 @@ import { Navbar, Container, Columns, Button, Dropdown } from 'react-bulma-compon
 import logoImage from '../../../assets/images/logo.png'
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
-import { FaUserCircle } from 'react-icons/fa';
+import { FaCog } from 'react-icons/fa';
 
 const ColumnsFullWith = styled(Columns)`
   width: 100%;
@@ -21,7 +21,7 @@ const Menu = () => {
       <Button outlined={true} color='white'>ENTRAR</Button>
     </a>
   } else {
-    actionButton = <Dropdown className='is-pulled-right is-right' color='dark' label={<FaUserCircle size="2em" />}>
+    actionButton = <Dropdown className='is-pulled-right is-right' color='dark' label={<FaCog size="2em" />}>
       <Dropdown.Item value="other">
         <a href='/users/edit'>
           Editar usuário
@@ -41,7 +41,9 @@ const Menu = () => {
         <Container>
           <ColumnsFullWith className='is-mobile'>
             <Columns.Column desktop={{ size: 2 }} mobile={{ size: 5 }}>
+            <a href='/discovery'>
               <img src={logoImage} className='image' />
+            </a>
             </Columns.Column>
             <Columns.Column>
               {actionButton}

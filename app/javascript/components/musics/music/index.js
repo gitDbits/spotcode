@@ -38,7 +38,7 @@ const Music = (props) => {
               </CustomSubHeading>
             </Columns.Column>
             <Columns.Column desktop={{ size: 4 }} mobile={{ size: 4 }} className='is-pulled-right has-text-right'>
-              <Favorite id={props.song.id} kind='songs' favored={props.song.favorite} />
+              <Favorite id={props.song.id} kind='songs' state_favor={props.song.favorite} />
             </Columns.Column>
           </Columns>
           <MusicSeparator />

@@ -1,0 +1,56 @@
+<div class="container">
+  <section class="section">
+    <div class="container">
+      <div class="is-centered is-mobile columns is-multiline">
+        <div class="column has-text-centered">
+            <img src="/logo.png"/>
+        </div>
+      </div>
+      <div class="is-centered is-mobile columns is-multiline">
+        <div class="column has-text-centered">
+            <%= devise_error_messages! %>
+        </div>
+      </div>
+      <div class="is-centered is-mobile columns is-multiline">
+        <div class="column is-6">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <div class="field">
+              <div class="control">
+                <h1 class="has-text-centered has-text-white title">E-MAIL<br>
+                  <%= f.email_field :email, autocomplete: "email", class: "input", required: true %>
+                </h1>
+              </div>
+            </div><br>
+            <div class="field">
+              <div class="control">
+                <h1 class="has-text-centered has-text-white title">SENHA<br>
+                <p class="subtitle has-text-white">No mínimo seis caracteres</p>
+                  <%= f.password_field :password, class: 'input', required: true %>
+                </h1>
+              </div>
+            </div><br>
+            <div class="field">
+              <div class="control">
+                <h1 class="has-text-centered has-text-white title">CONFIRMAR SENHA<br>
+                  <p class="subtitle has-text-white">Deve ser a mesma senha digitada acima</p>
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "input", required: true %>
+                </h1>
+              </div>
+            </div><br>
+            <div class="has-text-centered columns is-multiline">
+              <div class="column">
+                <button class="is-success is-large has-text-white is-fullwidth button">CADASTRAR</button>
+              </div>
+              <div class="column">
+                <a href="/" class="is-success is-outlined is-large has-text-white is-fullwidth button">VOLTAR</a>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+    

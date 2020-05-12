@@ -1,0 +1,51 @@
+<div class="container">
+  <section class="section">
+    <div class="container">
+      <div class="is-centered is-mobile columns is-multiline">
+        <div class="column has-text-centered">
+            <img src="/logo.png"/>
+        </div>
+      </div>
+      <div class="is-centered is-mobile columns is-multiline">
+        <div class="column has-text-centered">
+          <%= render '/users/shared/error_messages' %>
+        </div>
+      </div>
+      <div class="is-centered is-mobile columns is-multiline">
+        <div class="column is-6">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="field">
+              <div class="control">
+                <h1 class="has-text-centered has-text-white title">E-MAIL<br>
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'input', required: true %>
+                </h1>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <h1 class="has-text-centered has-text-white title">SENHA<br>
+                  <%= f.password_field :password, autocomplete: "current-password", class: 'input', required: true %>
+                </h1>
+              </div>
+            </div><br>
+            <div class="field">
+              <div class="control has-text-centered">
+                <input type="submit" name="commit" value="ENTRAR" class="is-success is-rounded is-large has-text-white button">
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <hr>
+      <div class="has-text-centered columns is-multiline">
+        <div class="column">
+          <a href="/users/sign_up">
+            <button class="is-success is-outlined is-large has-text-white button">
+              NÃO TENHO CADASTRO
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
