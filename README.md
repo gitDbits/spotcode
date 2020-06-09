@@ -66,7 +66,7 @@ yarn install
 - Os arquivos para utilização na aplicação spotcode: |Músicas|Imagem artista|Imagem album| pode ser realizado, no link abaixo;
 - Download [cliquei aqui](https://drive.google.com/open?id=1qp4bzU7nYr2P9cM__3SSH16xGCwneP3S) 
 ```
-Após realizar o download da pasta seed_files, mover para a pasta /spotcode/tmb/
+Após realizar o download da pasta seed_files, mover para a pasta /spotcode/tmp/
 ```
 - Criar o banco de dados
 ```
